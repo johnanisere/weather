@@ -1,5 +1,4 @@
 import getTime from "./getTime"
-import constants from "./constants"
 
 const setUp = () => {
   const dstOffset = 3600
