@@ -60,8 +60,9 @@ const setUp = () => {
     time,
     weather
   }
+  const error="arguments not passed"
 
-  return { expected,payload }
+  return { expected,payload,error }
 }
 
 test("index() should return expected weather and time",()=>{
@@ -70,4 +71,9 @@ test("index() should return expected weather and time",()=>{
   return index(payload).then(data => {
     expect(data).toEqual(expect.objectContaining(expected))
   })
+})
+
+test("index() should return error message",()=>{
+  const {error}=setUp()
+  expect(index()).toEqual(error)
 })
