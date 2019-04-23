@@ -1,5 +1,16 @@
 const location = "New York"
+const timestamp = 1555978627.28
 const time = "Mon Apr 22 2019 18:17:07 GMT+0100 (West Africa Standard Time)"
+const localeTime = "4/22/2019, 6:17:07 PM"
+const cityTime = {
+  data: {
+    dstOffset: 3600,
+    rawOffset: -28800,
+    status: "OK",
+    timeZoneId: "America/Los_Angeles",
+    timeZoneName: "Pacific Daylight Time"
+  }
+}
 const weather = {
   coord: {
     lon: -73.99,
@@ -52,4 +63,4 @@ const weather = {
   cod: 200
 }
 
-module.exports = { location, weather, time }
+module.exports = { location, weather, time, timestamp, cityTime, localeTime }
