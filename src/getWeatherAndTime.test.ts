@@ -2,10 +2,10 @@ const constants = require("./constants")
 const getWeatherAndTime = require("./getWeatherAndTime")
 
 const setUp = () => {
-  const weather = constants.weather
+  const weather = { data: constants.weather }
   const time = constants.cityTime
   const timestamp = constants.timestamp
-  const expected = { weather: weather.data, time: constants.localeTime }
+  const expected = { weather: constants.weather, time: constants.localeTime }
 
   return { expected, time, weather, timestamp }
 }
