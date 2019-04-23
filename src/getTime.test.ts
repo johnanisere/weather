@@ -1,4 +1,4 @@
-import getTime from "./getTime"
+const getTime = require("./getTime")
 
 const setUp = () => {
   const dstOffset = 3600

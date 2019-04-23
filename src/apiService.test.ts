@@ -1,5 +1,5 @@
-import apiService from "./apiService"
-import constants from "./constants"
+const apiService = require("./apiService")
+const constants = require("./constants")
 
 const setUp = () => {
   const time = constants.time

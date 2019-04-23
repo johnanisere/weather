@@ -1,6 +1,6 @@
-import axios from "axios"
-import getWeather from "./getWeather"
+const axios = require("axios")
+const getWeather = require("./getWeather")
 
-test("getWeather() should return an instance of axios", () => {
-  expect(getWeather()).toBeInstanceOf(axios)
+test("getWeather() should return an instance of Function", () => {
+  expect(getWeather()).toBeInstanceOf(Function)
 })

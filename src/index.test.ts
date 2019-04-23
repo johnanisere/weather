@@ -1,5 +1,5 @@
-import index from "./index"
-import constants from "./constants"
+const index = require("./index")
+const constants = require("./constants")
 
 const setUp = () => {
   const time = constants.time

@@ -52,4 +52,4 @@ const weather = {
   cod: 200
 }
 
-export default { location, weather, time }
+module.exports = { location, weather, time }
