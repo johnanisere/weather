@@ -1,0 +1,19 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "get time and wheather of a location",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "tsc": "tsc"
+  },
+  "author": "john",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^24.0.11",
+    "jest": "^24.7.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.4.4"
+  }
+}
