@@ -1,4 +1,4 @@
-import index from "./index"
+import apiService from "./apiService"
 import constants from "./constants"
 
 const setUp = () => {
@@ -15,15 +15,10 @@ const setUp = () => {
   return { expected, payload, error }
 }
 
-test("index() should return expected weather and time", () => {
+test("apiService() should return expected weather and time", () => {
   const { expected, payload } = setUp()
 
-  return index(payload).then(data => {
+  return apiService(payload).then(data => {
     expect(data).toEqual(expect.objectContaining(expected))
   })
-})
-
-test("index() should return error message", () => {
-  const { error } = setUp()
-  expect(index()).toEqual(error)
 })
