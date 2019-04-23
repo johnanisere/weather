@@ -1,6 +1,19 @@
 const axios = require("axios")
+const constants = require("./constants")
 const getWeather = require("./getWeather")
+jest.mock("axios")
 
-test("getWeather() should return an instance of Function", () => {
-  expect(getWeather()).toBeInstanceOf(Function)
+const setUp = () => {
+  const expected = constants.weather
+  return { expected }
+}
+
+test("getWeather() should return expected weather", () => {
+  const { expected } = setUp()
+  const resp = { data: expected }
+  axios.get.mockResolvedValue(resp)
+
+  return getWeather().then(data => {
+    expect(data).toEqual(expect.objectContaining(resp))
+  })
 })

@@ -1,4 +1,4 @@
-const location = "New York, 10005, Tokyo, São Paulo, Pluto"
+const location = "New York"
 const time = "Mon Apr 22 2019 18:17:07 GMT+0100 (West Africa Standard Time)"
 const weather = {
   coord: {
