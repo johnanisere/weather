@@ -1,4 +1,5 @@
 const location = "New York, 10005, Tokyo, São Paulo, Pluto"
+const time = "Mon Apr 22 2019 18:17:07 GMT+0100 (West Africa Standard Time)"
 const weather = {
   coord: {
     lon: -73.99,
@@ -50,7 +51,5 @@ const weather = {
   name: "New York",
   cod: 200
 }
-
-const time = "Mon Apr 22 2019 18:17:07 GMT+0100 (West Africa Standard Time)"
 
 export default { location, weather, time }
